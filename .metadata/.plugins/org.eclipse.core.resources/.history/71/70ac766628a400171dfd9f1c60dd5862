@@ -1,0 +1,24 @@
+//Write a class named Outer that contains an inner class named Inner. Add a method to Outer that returns an 
+//object of type Inner. In main( ), create and initialize a reference to an Inner. 
+
+package exercise5;
+
+public class pe2 {
+	int data=20;
+	class Inner{
+		void msg() {
+		System.out.println("data: " +data);
+	}
+}
+	Inner disp() {
+		Inner in=new Inner();
+		return in;
+	}
+	public static void main(String[] args) {
+		pe2 obj=new pe2();
+//		pe2.inner obj1=obj.new inner();
+//		obj1.msg();
+		Inner in;
+		in=obj.disp();
+	}
+}

@@ -1,0 +1,31 @@
+package assignments;
+import java.util.*;
+public class Program10 {
+	public static void main(String[] args) {
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("enter a string: ");
+//		String s=sc.next();
+//		System.out.println("enter a number: ");
+//		int n=sc.nextInt();
+//		for(int i=0;i<n;i++) {
+//			for(int j=s.length()-n;j<=s.length()-1;i++) {
+//				System.out.print(s.charAt(j));
+//			}
+//		}
+		  Scanner scan = new Scanner(System.in);
+	      String input1 = scan.next();
+	      int len = input1.length();
+	      int input2 = scan.nextInt();
+	      System.out.print(input1);
+
+	      for (int j = 0; j < input2; j++) {
+	         
+	          for(int i = len-input2;i<=len-1;i++) {
+	             
+	              System.out.print(input1.charAt(i));
+	             
+	          }
+	      }
+	}
+
+}

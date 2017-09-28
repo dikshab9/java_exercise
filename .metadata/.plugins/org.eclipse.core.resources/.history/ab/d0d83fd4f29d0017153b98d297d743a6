@@ -1,0 +1,33 @@
+package assignments;
+
+import java.util.*;
+
+class Palindrome
+{
+   public static void main(String args[])
+   {
+     int original, reverse = 0;
+      Scanner in = new Scanner(System.in);
+ 
+      System.out.println("Enter a number to check if it is a palindrome");
+      original = in.next();
+ 
+      int length = original.length();
+ 
+      for ( int i = length - 1; i >= 0; i-- )
+         reverse = reverse + original.charAt(i);
+ 
+      if (original.equals(reverse)) {
+         System.out.println("Entered string is a palindrome.");
+         
+             if(reverse%2==0){
+                 System.out.println(i);
+                 sum+=i;
+            
+         }
+         System.out.println("Sum of even numbers: "+sum);}
+      else
+         System.out.println("Entered string is not a palindrome.");
+ 
+   }
+}

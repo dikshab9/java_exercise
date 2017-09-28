@@ -1,0 +1,17 @@
+package exercise5;
+
+public class pe3 {
+	public static void main(String[] args) throws Exception{
+		String str="random string";
+		try {
+			throw new Exception("throw exception");
+		}
+		catch(Exception e) {
+			System.out.println(str);
+		}
+		finally {
+			System.out.println("I was there");
+		}
+	}
+
+}

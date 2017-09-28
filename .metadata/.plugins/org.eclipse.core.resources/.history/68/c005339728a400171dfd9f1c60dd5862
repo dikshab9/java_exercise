@@ -1,0 +1,24 @@
+package exercise5;
+
+
+
+public class pe2_new {
+	class Inner{
+        void msg() {
+            System.out.println("method inside inner class");              
+        }
+    }
+    Inner disp() {
+        Inner in = new Inner();
+        System.out.println("method inside inner class");   
+        return in;      
+    }
+    public static void main(String[] args) {
+        pe2_new p = new pe2_new();
+            Inner in;
+            in = p.disp();
+            
+            
+    }
+
+}
