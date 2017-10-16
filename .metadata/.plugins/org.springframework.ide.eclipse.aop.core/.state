@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model/>
+<aop-reference-model>
+<aop-project name="demo-1"/>
+<aop-project name="demo"/>
+<aop-project name="springboot_quickstart"/>
+<aop-project name="springchocolatestore"/>
+<aop-project name="foodie-app"/>
+<aop-project name="rest-service"/>
+</aop-reference-model>

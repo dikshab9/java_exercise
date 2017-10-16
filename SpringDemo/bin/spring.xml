@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<bean id="parent_triangle" class="org.beanFactory.Triangle" abstract="true">
+<property name="pointA" ref="pointA"></property>
+</bean>
+
+<!--  <bean id="triangle1" class="org.beanFactory.Triangle" parent="parent_triangle">
+<property name="pointB" ref="pointB"></property>
+<property name="pointC" ref="pointC"></property>	
+</bean>
+
+<bean id="triangle2" class="org.beanFactory.Triangle" parent="parent_triangle">
+<property name="pointB" ref="pointB"></property>
+	
+</bean>
+-->
+<bean id="pointA" class="org.beanFactory.Point">
+	<property name="x" value="0"/>
+	<property name="y" value="0"/>
+</bean>
+
+<!--  <bean id="pointB" class="org.beanFactory.Point">
+		<property name="x" value="-20"/>
+		<property name="y" value="0"/>
+</bean>
+
+<bean id="pointC" class="org.beanFactory.Point">
+		<property name="x" value="0"/>
+		<property name="y" value="20"/>
+</bean>
+-->
+<bean id="circle" class="org.beanFactory.Circle">
+
+</bean>
+
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+
+<alias name="triangle" alias="triangle-alias"/>
+
+
+
+
+
+</beans>

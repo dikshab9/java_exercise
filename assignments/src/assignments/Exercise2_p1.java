@@ -1,5 +1,6 @@
 package assignments;
 import java.util.Scanner;
+
 public class Exercise2_p1 {
 	public static void main(String args[])
 	   {

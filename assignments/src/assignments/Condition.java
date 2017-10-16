@@ -1,18 +1,23 @@
 package assignments;
-import java.util.Scanner; 
+import java.util.Scanner;
+
+import org.apache.logging.log4j.*; 
+;
 
 public class Condition {
+	
+	private static Logger logger=LogManager.getLogger();
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		
-		System.out.println("Enter a number: ");
+		logger.info("Enter a number: ");
 		int number=sc.nextInt();
 		if(number>=20 && number<=30) {
 			if(number%2==0) {
-				System.out.println("Jerry");
+				logger.info("Jerry");
 			}
 			else {
-				System.out.println("Tom");
+				logger.info("Tom");
 			}
 		}
 		
